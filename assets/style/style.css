@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: scroll;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  padding: 40px;
+  background-image: linear-gradient(#004743, #abd0c6);
+  color: #fff;
+  font-size: 20px;
+}
+
+nav {
+  padding: 20px;
+  text-align: right;
+  background-color: #c5d9f1;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+nav a {
+  display: inline;
+  text-decoration: none;
+  margin-left: 25px;
+  color: #004743;
+  font-weight: 600;
+  font-size: 18px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  overflow: auto;
+  padding: 10px;
+}
+
+#content {
+  width: 60%;
+  float: left;
+}
+
+h4 {
+  text-align: center;
+  margin: 0;
+}
+
+aside {
+  float: right;
+  width: 39%;
+}
+
+.profile {
+  margin: 10px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.social {
+  padding: 10px;
+}
+.social img {
+  width: 20px;
+}
+.social a {
+  text-decoration: none;
+  color: #004743;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 9px 11px 16px -6px rgba(0, 0, 0, 0.66);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.subtitle {
+  padding: 10px;
+  background-color: #004743;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box {
+  padding: 10px;
+}
+
+.bio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-box {
+  width: 50%;
+  text-align: center;
+  background-color: #c5d9f1;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+form {
+  text-align: center;
+}
+form button {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: #004743;
+  border-radius: 5px;
+}
+form button:hover {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+legend {
+  font-weight: bold;
+  color: #004743;
+}
+
+input, textarea {
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #c5d9f1;
+}
+
+textarea {
+  height: 300px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #004743;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 999px) {
+  #content, aside {
+    margin: 15px auto;
+    float: none;
+  }
+  .jumbotron h1 {
+    text-align: right;
+  }
+  .card {
+    box-shadow: none;
+  }
+  #content {
+    width: 90%;
+    box-shadow: 9px 11px 16px -6px rgba(0, 0, 0, 0.66);
+  }
+  nav {
+    text-align: center;
+  }
+  main {
+    padding: 0;
+    overflow: hidden;
+  }
+  .mini-box {
+    width: 80%;
+  }
+  aside {
+    width: 100%;
+    padding: 20px;
+  }
+  aside .subtitle {
+    display: none;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-img {
+    width: 90px;
+    max-height: 90px;
+  }
+  .social {
+    font-size: 12px;
+  }
+}

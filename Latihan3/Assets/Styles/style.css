@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e8e8e9;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.logo {
+  display: flex;
+}
+
+.img-logo {
+  width: 25px;
+  max-height: 25px;
+  border-radius: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav p {
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: blue;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .logo {
+    margin: auto;
+  }
+  nav {
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(130, 130, 255, 0.2);
+  }
+}/*# sourceMappingURL=style.css.map */

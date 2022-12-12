@@ -1,0 +1,141 @@
+$prime_cl: #007acc
+$sec_cl: #c5d9f1
+* 
+    box-sizing: border-box
+body
+    margin: 0
+    overflow: scroll
+    font-family: sans-serif
+header
+    display: inline
+.jumbotron
+    padding: 40px
+    background-image: linear-gradient($prime_cl, $sec_cl)
+    color: #fff
+    font-size: 20px
+nav
+    padding: 20px
+    text-align: right
+    background-color: $sec_cl
+    top: 0
+    position: sticky
+    a
+        display: inline
+        text-decoration: none
+        margin-left: 25px
+        color: $prime_cl
+        font-weight: 600
+        font-size: 18px
+        &:hover
+            text-decoration: underline
+main
+    overflow: auto
+    padding: 10px
+#content
+    width: 60%
+    float: left
+h4
+    text-align: center
+    margin: 0
+aside
+    float: right
+    width: 39%
+.profile
+    margin: 10px
+.profile-img
+    width: 150px
+    border-radius: 100%
+.social
+    padding: 10px
+    img
+        width: 20px
+    a
+        text-decoration: none
+        color: $prime_cl
+        font-weight: bold
+.card
+    box-shadow: 9px 11px 16px -6px rgba(0,0,0,0.66)
+    border-radius: 5px
+    margin: 10px auto
+.subtitle
+    padding: 10px
+    background-color: $prime_cl
+    color: #fff
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+.box
+    padding: 10px
+.bio-item
+    display: flex
+    justify-content: center
+    align-items: center
+.mini-box
+    width: 50%
+    text-align: center
+    background-color: $sec_cl
+    padding: 10px
+    margin: 20px auto
+form
+    text-align: center
+    button
+        width: 90%
+        padding: 10px
+        font-size: 20px
+        font-weight: bold
+        border: none
+        color: white
+        background-color: $prime_cl
+        border-radius: 5px
+        &:hover
+            cursor: pointer
+fieldset
+    border: none
+    text-align: left
+legend
+    font-weight: bold
+    color: $prime_cl
+input, textarea
+    border: none
+    width: 100%
+    font-size: 18px
+    padding: 10px
+    background-color: $sec_cl
+textarea
+    height: 300px
+footer
+    padding: 20px
+    background-color: $prime_cl
+    text-align: center
+    color: white
+@media screen and ( max-width: &999px )
+    #content, aside
+        margin: 15px auto
+        float: none
+    .jumbotron
+        h1
+            text-align: right
+    .card
+        box-shadow: none
+    #content
+        width: 90%
+        box-shadow: 9px 11px 16px -6px rgba(0,0,0,0.66)
+    nav
+        text-align: center
+    main
+        padding: 0
+        overflow: hidden
+    .mini-box
+        width: 80%   
+    aside
+        width: 100%
+        padding: 20px
+        .subtitle
+            display: none
+    .profile
+        display: flex
+        justify-content: center            
+    .profile-img
+        width: 90px
+        max-height: 90px
+    .social
+        font-size: 12px
